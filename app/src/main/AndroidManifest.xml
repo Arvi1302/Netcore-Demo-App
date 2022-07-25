@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myintegrate" >
+
+    <application
+        android:name=".ApplicationActivity"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyIntegrate"
+        tools:targetApi="31" >
+
+        <meta-data
+            android:name="SMT_APP_ID"
+            android:value="68d2d03a2fc84eadbe58b847aab92881" />
+        <meta-data
+            android:name="HANSEL_APP_ID"
+            android:value="2TW40EUDTWZVZSI8XZJM47CYN" />
+        <meta-data
+            android:name="HANSEL_APP_KEY"
+            android:value="Q3QUXII4LW5B5AJSMBZXL9P43FNNCOFDUT0I91G5BRE2TAWA1C" />
+<!--        <meta-data-->
+<!--            android:name="SMT_APP_ID"-->
+<!--            android:value="f40a9bca7ad7f10042ce7ae27bdc84f3" />-->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="hansel" />
+            </intent-filter>
+        </activity>
+
+<!--        <service-->
+<!--            android:name=".FCMService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+<!--        <receiver-->
+<!--            android:name=".DeeplinkReceiver"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <data-->
+<!--                    android:host="www.google.com"-->
+<!--                    android:scheme="https" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+    </application>
+
+</manifest>

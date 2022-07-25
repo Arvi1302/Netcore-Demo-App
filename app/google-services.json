@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "521072961877",
+    "project_id": "myintegrate-cee",
+    "storage_bucket": "myintegrate-cee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521072961877:android:7e4610d807113900dae7dc",
+        "android_client_info": {
+          "package_name": "com.example.myintegrate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521072961877-3d3vubrq1aqi55ir4hfn0s21mfbe06vt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcQCr0XUimBEYvdeq53gw0J5ge3yL3Nhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521072961877-3d3vubrq1aqi55ir4hfn0s21mfbe06vt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
