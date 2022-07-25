@@ -21,30 +21,6 @@ public class ApplicationActivity extends Application {
         smartech.trackAppInstallUpdateBySmartech();
         smartech.setDebugLevel(SMTDebugLevel.Level.VERBOSE);
 
-        try {
-            SmartPush smartPush = SmartPush.getInstance(new WeakReference<>(getApplicationContext()));
-            smartPush.fetchAlreadyGeneratedTokenFromFCM();
-        } catch (Exception e) {
-            Log.e("App", "Fetching FCM token failed.");
-        }
-
-        DeeplinkReceiver deeplinkReceiver = new DeeplinkReceiver();
-        IntentFilter filter = new IntentFilter("com.smartech.EVENT_PN_INBOX_CLICK");
-        getApplicationContext().registerReceiver(deeplinkReceiver, filter);
-
-
-
-//        SMTNotificationOptions options = new SMTNotificationOptions(getApplicationContext());
-//        options.setBrandLogo("logo"); //e.g.logo is sample name for brand logo
-//        options.setLargeIcon("icon_nofification");//e.g.ic_notification is sample name for large icon
-//        options.setSmallIcon("ic_action_play"); //e.g.ic_action_play is sample name for icon
-//        options.setSmallIconTransparent("ic_action_play"); //e.g.ic_action_play is sample name for transparent small icon
-//        options.setTransparentIconBgColor("#FF0000");
-//        options.setPlaceHolderIcon("ic_notification");//e.g.ic_notification is sample name for placeholder icon
-//        SmartPush.getInstance(new WeakReference(getApplicationContext())).setNotificationOptions(options);
-
-
-
     }
 
 }
