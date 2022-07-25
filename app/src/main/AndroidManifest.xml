@@ -24,9 +24,6 @@
         <meta-data
             android:name="HANSEL_APP_KEY"
             android:value="Q3QUXII4LW5B5AJSMBZXL9P43FNNCOFDUT0I91G5BRE2TAWA1C" />
-<!--        <meta-data-->
-<!--            android:name="SMT_APP_ID"-->
-<!--            android:value="f40a9bca7ad7f10042ce7ae27bdc84f3" />-->
 
         <activity
             android:name=".MainActivity"
@@ -45,28 +42,6 @@
                 <data android:scheme="hansel" />
             </intent-filter>
         </activity>
-
-<!--        <service-->
-<!--            android:name=".FCMService"-->
-<!--            android:exported="false">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
-<!--            </intent-filter>-->
-<!--        </service>-->
-
-<!--        <receiver-->
-<!--            android:name=".DeeplinkReceiver"-->
-<!--            android:exported="false">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.VIEW" />-->
-
-<!--                <category android:name="android.intent.category.BROWSABLE" />-->
-<!--                <category android:name="android.intent.category.DEFAULT" />-->
-<!--                <data-->
-<!--                    android:host="www.google.com"-->
-<!--                    android:scheme="https" />-->
-<!--            </intent-filter>-->
-<!--        </receiver>-->
 
     </application>
 
