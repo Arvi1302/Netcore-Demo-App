@@ -31,14 +31,5 @@ public class MainActivity extends AppCompatActivity {
 
         Smartech.getInstance(new WeakReference<>(getApplicationContext())).trackEvent("Add To Cart", payloads);
 
-        //new DeeplinkReceiver().onReceive(this, getIntent());
-
-
-//        SmartPush.getInstance(new WeakReference<>(getApplicationContext())).createNotificationChannelGroup("1234","Integrate");
-//        SMTNotificationChannel.Builder smtBuilder = new SMTNotificationChannel.Builder("4321","Myinte", NotificationManager.IMPORTANCE_MAX);
-//        smtBuilder.setChannelDescription("CEE Integration is done");
-//        smtBuilder.setChannelGroupId("1234");
-//        SMTNotificationChannel smtNotificationChannel = smtBuilder.build();
-//        SmartPush.getInstance(new WeakReference<>(getApplicationContext())).createNotificationChannel(smtNotificationChannel);
     }
 }
