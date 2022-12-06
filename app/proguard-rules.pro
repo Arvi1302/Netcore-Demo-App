@@ -20,7 +20,6 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
-
 # Smartech Base SDK
 -dontwarn com.netcore.android.**
 -keep class com.netcore.android.**{*;}

@@ -28,9 +28,11 @@ public class MainActivity extends AppCompatActivity {
         payloads.put("prid", 2);
         payloads.put("price", 15000.00);
         payloads.put("prqt", 1);
+
         Smartech.getInstance(new WeakReference<>(getApplicationContext())).trackEvent("Add To Cart", payloads);
 
         //new DeeplinkReceiver().onReceive(this, getIntent());
+
 
 //        SmartPush.getInstance(new WeakReference<>(getApplicationContext())).createNotificationChannelGroup("1234","Integrate");
 //        SMTNotificationChannel.Builder smtBuilder = new SMTNotificationChannel.Builder("4321","Myinte", NotificationManager.IMPORTANCE_MAX);

@@ -30,16 +30,16 @@ public class ApplicationActivity extends Application {
         HSLLogLevel.mid.setEnabled(true);
         HSLLogLevel.debug.setEnabled(true);
 
-//        try {
-//            SmartPush smartPush = SmartPush.getInstance(new WeakReference<>(getApplicationContext()));
-//            smartPush.fetchAlreadyGeneratedTokenFromFCM();
-//        } catch (Exception e) {
-//            Log.e("App", "Fetching FCM token failed.");
-//        }
-//
-//        DeeplinkReceiver deeplinkReceiver = new DeeplinkReceiver();
-//        IntentFilter filter = new IntentFilter("com.smartech.EVENT_PN_INBOX_CLICK");
-//        getApplicationContext().registerReceiver(deeplinkReceiver, filter);
+        try {
+            SmartPush smartPush = SmartPush.getInstance(new WeakReference<>(getApplicationContext()));
+            smartPush.fetchAlreadyGeneratedTokenFromFCM();
+        } catch (Exception e) {
+            Log.e("App", "Fetching FCM token failed.");
+        }
+
+        DeeplinkReceiver deeplinkReceiver = new DeeplinkReceiver();
+        IntentFilter filter = new IntentFilter("com.smartech.EVENT_PN_INBOX_CLICK");
+        getApplicationContext().registerReceiver(deeplinkReceiver, filter);
 
 
 
