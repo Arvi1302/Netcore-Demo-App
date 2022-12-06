@@ -20,17 +20,18 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
+
 # Smartech Base SDK
 -dontwarn com.netcore.android.**
 -keep class com.netcore.android.**{*;}
 -keep class * implements com.netcore.android.**.* {*;}
 -keep class * extends com.netcore.android.**.* {*;}
 
-# Hansel SDK
--dontwarn io.hansel.**
--keep class io.hansel.**{*;}
--keep class * implements io.hansel.**.* {*;}
--keep class * extends io.hansel.**.* {*;}
+## Hansel SDK
+#-dontwarn io.hansel.**
+#-keep class io.hansel.**{*;}
+#-keep class * implements io.hansel.**.* {*;}
+#-keep class * extends io.hansel.**.* {*;}
 
 # Smartech Push SDK
 -dontwarn com.netcore.android.smartechpush.**

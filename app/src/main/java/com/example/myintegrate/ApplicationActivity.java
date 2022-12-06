@@ -12,25 +12,34 @@ import com.netcore.android.smartechpush.notification.SMTNotificationOptions;
 
 import java.lang.ref.WeakReference;
 
+import io.hansel.core.logger.HSLLogLevel;
+import io.hansel.hanselsdk.Hansel;
+
 public class ApplicationActivity extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
         Smartech smartech = Smartech.getInstance(new WeakReference<>(getApplicationContext()));
+        //smartech.setDebugLevel(9);
         smartech.initializeSdk(this);
-        smartech.trackAppInstallUpdateBySmartech();
+        //smartech.trackAppInstallUpdateBySmartech();
+
+//        Hansel.enableDebugLogs();
         smartech.setDebugLevel(SMTDebugLevel.Level.VERBOSE);
+        HSLLogLevel.all.setEnabled(true);
+        HSLLogLevel.mid.setEnabled(true);
+        HSLLogLevel.debug.setEnabled(true);
 
-        try {
-            SmartPush smartPush = SmartPush.getInstance(new WeakReference<>(getApplicationContext()));
-            smartPush.fetchAlreadyGeneratedTokenFromFCM();
-        } catch (Exception e) {
-            Log.e("App", "Fetching FCM token failed.");
-        }
-
-        DeeplinkReceiver deeplinkReceiver = new DeeplinkReceiver();
-        IntentFilter filter = new IntentFilter("com.smartech.EVENT_PN_INBOX_CLICK");
-        getApplicationContext().registerReceiver(deeplinkReceiver, filter);
+//        try {
+//            SmartPush smartPush = SmartPush.getInstance(new WeakReference<>(getApplicationContext()));
+//            smartPush.fetchAlreadyGeneratedTokenFromFCM();
+//        } catch (Exception e) {
+//            Log.e("App", "Fetching FCM token failed.");
+//        }
+//
+//        DeeplinkReceiver deeplinkReceiver = new DeeplinkReceiver();
+//        IntentFilter filter = new IntentFilter("com.smartech.EVENT_PN_INBOX_CLICK");
+//        getApplicationContext().registerReceiver(deeplinkReceiver, filter);
 
 
 
