@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         Smartech.getInstance(new WeakReference<>(getApplicationContext())).trackEvent("Add To Cart", payloads);
 
-        //new DeeplinkReceiver().onReceive(this, getIntent());
+        new DeeplinkReceiver().onReceive(this, getIntent());
 
 
 //        SmartPush.getInstance(new WeakReference<>(getApplicationContext())).createNotificationChannelGroup("1234","Integrate");

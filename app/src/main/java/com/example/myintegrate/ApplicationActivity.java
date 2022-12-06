@@ -22,7 +22,7 @@ public class ApplicationActivity extends Application {
         Smartech smartech = Smartech.getInstance(new WeakReference<>(getApplicationContext()));
         //smartech.setDebugLevel(9);
         smartech.initializeSdk(this);
-        //smartech.trackAppInstallUpdateBySmartech();
+        smartech.trackAppInstallUpdateBySmartech();
 
 //        Hansel.enableDebugLogs();
         smartech.setDebugLevel(SMTDebugLevel.Level.VERBOSE);
