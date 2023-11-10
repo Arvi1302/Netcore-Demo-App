@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.myintegrate"
         minSdk 21
-        targetSdk 32
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -30,21 +30,24 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.2.1'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'com.netcore.android:smartech-sdk:3.2.30'
-    implementation 'androidx.work:work-runtime:2.7.1'
+    implementation 'com.netcore.android:smartech-sdk:3.3.3'
+    implementation 'androidx.work:work-runtime:2.8.1'
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
 
-    implementation 'com.netcore.android:smartech-nudges:8.9.3'
-    implementation 'com.netcore.android:smartech-push:3.2.16'
+    implementation 'com.netcore.android:smartech-nudges:9.0.10'
+    implementation 'com.netcore.android:smartech-push:3.3.2'
+    implementation fileTree(dir: 'libs', include: ['MiPush_SDK_Client_5_1_5-G_3rd.aar'])
+    implementation 'com.netcore.android:smartech-push-xiaomi:3.3.0'
 
-    implementation platform('com.google.firebase:firebase-bom:30.2.0')
+    implementation platform('com.google.firebase:firebase-bom:31.4.0')
     implementation 'com.google.firebase:firebase-analytics'
 
 }

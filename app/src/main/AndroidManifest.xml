@@ -13,20 +13,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyIntegrate"
-        tools:targetApi="31" >
+        tools:targetApi="33" >
 
-        <meta-data
-            android:name="SMT_APP_ID"
-            android:value="68d2d03a2fc84eadbe58b847aab92881" />
-        <meta-data
-            android:name="HANSEL_APP_ID"
-            android:value="2TW40EUDTWZVZSI8XZJM47CYN" />
-        <meta-data
-            android:name="HANSEL_APP_KEY"
-            android:value="Q3QUXII4LW5B5AJSMBZXL9P43FNNCOFDUT0I91G5BRE2TAWA1C" />
 <!--        <meta-data-->
 <!--            android:name="SMT_APP_ID"-->
-<!--            android:value="f40a9bca7ad7f10042ce7ae27bdc84f3" />-->
+<!--            android:value="68d2d03a2fc84eadbe58b847aab92881" />-->
+<!--        <meta-data-->
+<!--            android:name="HANSEL_APP_ID"-->
+<!--            android:value="2TW40EUDTWZVZSI8XZJM47CYN" />-->
+<!--        <meta-data-->
+<!--            android:name="HANSEL_APP_KEY"-->
+<!--            android:value="Q3QUXII4LW5B5AJSMBZXL9P43FNNCOFDUT0I91G5BRE2TAWA1C" />-->
+
+<!--        <meta-data-->
+<!--            android:name="SMT_IS_AUTO_ASK_NOTIFICATION_PERMISSION"-->
+<!--            android:value="0" />-->
+        <meta-data
+            android:name="SMT_IS_AUTO_FETCHED_LOCATION"
+            android:value="1" />
+
+        <!--        <meta-data-->
+<!--            android:name="SMT_APP_ID"-->
+<!--            android:value="c2d72b4011d6b57e37f5d4079b17b4cf" />-->
+            <meta-data
+                android:name="SMT_APP_ID"
+                android:value="652671e05427cbd6289c568e9d31c50c" />
+        <meta-data
+            android:name="HANSEL_APP_ID"
+            android:value="0E1NIREAXV48EZL3P12067MCR" />
+        <meta-data
+            android:name="HANSEL_APP_KEY"
+            android:value="MK8028A5PDB9H8AC5S8TO12C42FGOY14PPD49F7468HSR3OYGV" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity
             android:name=".MainActivity"
@@ -42,7 +62,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:scheme="hansel" />
+                <data android:scheme="hanselnative" />
             </intent-filter>
         </activity>
 
